@@ -1,6 +1,6 @@
 import { InputJsonValue } from "../../types";
 
 export type UserFileCreateInput = {
-  adhaar: InputJsonValue;
-  panCard: InputJsonValue;
+  adhaar?: InputJsonValue;
+  panCard?: InputJsonValue;
 };
