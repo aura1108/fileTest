@@ -1,0 +1,16 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DB_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model UserFile {
+  adhaar    Json
+  createdAt DateTime @default(now())
+  id        String   @id @default(cuid())
+  panCard   Json
+  updatedAt DateTime @updatedAt
+}
