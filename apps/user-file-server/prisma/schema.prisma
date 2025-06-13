@@ -8,9 +8,9 @@ generator client {
 }
 
 model UserFile {
-  adhaar    Json
+  adhaar    Json?
   createdAt DateTime @default(now())
   id        String   @id @default(cuid())
-  panCard   Json
+  panCard   Json?
   updatedAt DateTime @updatedAt
 }
